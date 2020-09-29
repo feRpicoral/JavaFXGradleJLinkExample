@@ -1,0 +1,38 @@
+plugins {
+    id "application"
+    id "org.openjfx.javafxplugin" version "0.0.8"
+    id "org.beryx.jlink" version "2.22.0"
+}
+
+group "com.fernandopicoral"
+version "1.0-SNAPSHOT"
+
+repositories {
+    jcenter()
+}
+
+javafx {
+    version = "11.0.1" //JavaFX version
+    modules = [ "javafx.controls", "javafx.fxml" ] //All the modules you will use in your project
+}
+
+tasks.withType(JavaCompile) { options.encoding = "UTF-8" }
+
+// Java version
+sourceCompatibility = 1.11
+
+jlink {
+    launcher {
+        name = "exe_name" // Name of the executable created by jlink
+    }
+}
+
+// Note that the minimum Gradle version to run this way is 6.6.1
+application {
+    mainModule = "com.picoral.main"
+    mainClass = "com.picoral.App"
+}
+
+// For older Gradle verions
+// mainClassName = "com.picoral.main/com.picoral.App"
+

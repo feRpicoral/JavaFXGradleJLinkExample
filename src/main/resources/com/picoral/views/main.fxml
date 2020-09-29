@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picoral.App">
+    <children>
+        <Label layoutX="200.0" layoutY="174.0" text="Hello World!" textAlignment="CENTER"
+               AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="199.0"
+               AnchorPane.topAnchor="174.0">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
